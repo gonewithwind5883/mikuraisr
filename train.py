@@ -1,4 +1,5 @@
-from future import division
+#encoding:utf-8 
+from __future__ import division
 import argparse, os
 import numpy as np
 import cv2
@@ -41,7 +42,7 @@ for file in fileList:
 
     #模糊LR
     #Upscaling
-    LR = cv2.GaussianBlur(LR,(0,0),2);
+    LR = cv2.GaussianBlur(HR,(0,0),2);
 
     # Set the train map
 
